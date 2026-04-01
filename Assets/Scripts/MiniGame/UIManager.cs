@@ -1,18 +1,18 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro; // Usando el Nuevo Formato de Textos de Unity
 
 public class UIManager : MonoBehaviour
 {
     [Header("Pantalla Central Reutilizable (Pop-Up)")]
     public GameObject centerScreen; 
-    public Text titleText;
+    public TextMeshProUGUI titleText;
     public GameObject playButton;
     public GameObject returnButton;
 
     [Header("HUD del Jugador (InGame)")]
     public GameObject hudGroup;
-    public Text infoText;
-    public Text livesText;
+    public TextMeshProUGUI infoText;
+    public TextMeshProUGUI livesText;
 
     // Estado incial: Menu
     public void ShowMenu()
